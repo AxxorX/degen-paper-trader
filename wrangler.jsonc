@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "degen-paper-trader",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-04",
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "degen-paper-trader-db",
+      "database_id": "3beba0cd-b62a-4331-966f-5619863b9bf3"
+    }
+  ],
+
+  "secrets": {
+    "required": [
+      "TELEGRAM_BOT_TOKEN",
+      "SETUP_KEY",
+      "WEBHOOK_SECRET"
+    ]
+  }
+}
