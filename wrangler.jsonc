@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "degen-paper-trader",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-05",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "degen-paper-trader-db",
+      "database_id": "3beba0cd-b62a-4331-966f-5619863b9bf3"
+    }
+  ],
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    },
+    "issue_detection": {
+      "enabled": false
+    }
+  }
+}
